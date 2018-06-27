@@ -8,9 +8,18 @@ publish = false
 bytes = "0.4.7"
 futures = "0.1.21"
 h2 = "0.1.4"
-h2-support = { git = "https://github.com/carllerche/h2" }
 http = "0.1.5"
 tokio = "0.1.5"
 tower-h2 = { path = ".." }
-tower-service = { git = "https://github.com/tower-rs/tower" }
-tower-util = { git = "https://github.com/tower-rs/tower" }
+
+[dependencies.h2-support]
+git = "https://github.com/carllerche/h2"
+rev = "41aae14"
+
+[dependencies.tower-service]
+git = "https://github.com/tower-rs/tower"
+rev = "20fb04e"
+
+[dependencies.tower-util]
+git = "https://github.com/tower-rs/tower"
+rev = "20fb04e"
